@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/*---------------------------------------------------------------------/
+    General
+/---------------------------------------------------------------------*/
 body {
     background: url("../img/background-01.jpg") no-repeat center center fixed;
     font-family: 'Poppins', sans-serif !important;
@@ -9,6 +12,20 @@ body {
 
 h2 {
     font-weight: 800 !important;
+}
+
+.title-top {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-top: 15px;
+    margin-bottom: -20px;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
 }
 
 .carousel {
