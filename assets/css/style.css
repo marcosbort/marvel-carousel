@@ -7,13 +7,22 @@ body {
     scroll-behavior: smooth;
 }
 
+h2 {
+    font-weight: 800 !important;
+}
 
+.carousel {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+}
 .carousel-inner {
     padding-top: 120px;
     
 }
 .carousel-control-prev,
 .carousel-control-next {
+    margin-top: 100px;
     width: 30% !important;
 }
 
@@ -26,7 +35,7 @@ body {
 /---------------------------------------------------------------------*/
 .responsive-card {
     position: relative;
-    width: 520px;
+    width: 500px;
     height: 300px;
     font-family: 'Poppins', sans-serif !important;
     display: flex;
@@ -56,7 +65,7 @@ body {
 /* Content */
 .responsive-card__content {
     position: relative;
-    width: 44%;
+    width: 48%;
     left: 20%;
     padding: 10px 10px 10px 44px;
     opacity: 0;
@@ -85,6 +94,7 @@ body {
 .responsive-card__text {
     color: #fff;
     display: block;
+    font-weight: 500 !important;
     line-height: 22px;
     margin: 12px 0 10px 0;
     padding: 0;
@@ -100,6 +110,20 @@ body {
     border-radius: 10px;
     background: #fff;
     margin-top: 8px;
+}
+
+/* Individual image */
+.responsive-card:hover .responsive-card__image__iron-man {
+    left: 67.5%;
+}
+.responsive-card:hover .responsive-card__image__hawkeye {
+    left: 74%;
+}
+.responsive-card:hover .responsive-card__image__holk {
+    left: 75%;
+}
+.responsive-card:hover .responsive-card__image__thor {
+    left: 71.5%;
 }
 
 /*---------------------------------------------------------------------/
