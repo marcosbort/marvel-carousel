@@ -146,33 +146,28 @@ h2 {
 /*---------------------------------------------------------------------/
     Media Queries
 /---------------------------------------------------------------------*/
-@media (max-width: 589px) {
+/* @media (max-width: 589px) { */
+@media (max-width: 509px) {
+    .carousel-inner {
+        padding-top: 0px;
+        
+    }
     .responsive-card {
         position: relative;
-        width: auto;
-        max-width: 550px;
+        width: 300px;
         align-items: flex-start;
         transition: 0.5s;
     }
     .responsive-card:hover {
-        height: 550px;
+        height: 530px;
     }
     .responsive-card:hover .responsive-card__image {
         left: 50%;
-        height: 360px;
+        height: 260px;
     }
     .responsive-card__content {
         width: 100%;
         left: 0;
         padding: 40px;
-    }
-}
-
-@media (max-width: 420px) {
-    .responsive-card__content {
-        padding: 30px;
-    }
-    .responsive-card:hover .responsive-card__image {
-        height: 300px;
     }
 }
