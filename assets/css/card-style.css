@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*---------------------------------------------------------------------/
+    General
+/---------------------------------------------------------------------*/
+body {
+    background: url("../img/background-01.jpg") no-repeat center center fixed;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------------------------------------/
+    Responsive Card
+/---------------------------------------------------------------------*/
+.responsive-card {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#d41e31,#491f8f);
+    margin: 50px 0;
+    box-shadow: -5px 4px 40px rgb(27, 27, 27);
+}
+
+/* Image */
+.responsive-card__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 380px;
+    transition: 0.5s;
+}
+
+.responsive-card:hover .responsive-card__image {
+    left: 78%;
+    height: 460px;
+}
+
+/* Content */
+.responsive-card__content {
+    position: relative;
+    width: 48%;
+    left: 20%;
+    padding: 10px 10px 10px 44px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.responsive-card:hover .responsive-card__content {
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+
+/* Title */
+.responsive-card__title {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    /* font-weight: 800; */
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Text */
+.responsive-card__text {
+    color: #fff;
+    display: block;
+    font-weight: 500 !important;
+    line-height: 22px;
+    margin: 12px 0 10px 0;
+    padding: 0;
+}
+
+/* CTA */
+.responsive-card__cta {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 8px;
+}
+
+/* Individual image */
+.responsive-card:hover .responsive-card__image__iron-man {
+    left: 67.5%;
+}
+.responsive-card:hover .responsive-card__image__hawkeye {
+    left: 74%;
+}
+.responsive-card:hover .responsive-card__image__holk {
+    left: 75%;
+}
+.responsive-card:hover .responsive-card__image__thor {
+    left: 71.5%;
+}
+
+/*---------------------------------------------------------------------/
+    Media Queries
+/---------------------------------------------------------------------*/
+/* @media (max-width: 589px) { */
+@media (max-width: 509px) {
+    .carousel-inner {
+        padding-top: 0px;
+        
+    }
+    .responsive-card {
+        position: relative;
+        width: 300px;
+        align-items: flex-start;
+        transition: 0.5s;
+    }
+    .responsive-card:hover {
+        height: 530px;
+    }
+    .responsive-card:hover .responsive-card__image {
+        left: 50%;
+        height: 260px;
+    }
+    .responsive-card__content {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
